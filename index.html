@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tittle -->
+
+    <title>Makos</title>
+
+    <!-- Bootstrap CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome CDN -->
+
+    <script src="https://kit.fontawesome.com/f61b217d65.js" crossorigin="anonymous"></script>
+
+    <!-- Style Sheet -->
+
+    <link rel="stylesheet" href="./Asset/CSS/pagination.css"/>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg bg-white position-relative visible">
+        <div class="container visible">
+            <a class="navbar-brand" href="index.html"><img src="./Asset/images/Jobaskit-logo.png"
+                    class="nav_logo navi img-fluid" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse visible" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto visible">
+                    <li class="nav-item dropdown visible m-2 fw-bold">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            How it works
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="recruiters.php">Recruiters</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="job-seekers.html">Job-seekers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="campus.php">Campuses</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown visible m-2 fw-bold">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="recruiters-features.html">Recruiters</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="job-seekers-features.html">Job Seekers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="campus-features.html">Campuses</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item m-2 fw-bold">
+                        <a class="nav-link" href="clients.html">Clients</a>
+                    </li>
+                    <!--<li class="nav-item">-->
+                    <!--  <a class="nav-link" href="#">Pricing</a>-->
+                    <!--</li>-->
+                    <li class="nav-item m-2 fw-bold">
+                        <a class="nav-link" href="partner.html">Partner with us</a>
+                    </li>
+                    <li class="nav-item m-2 fw-bold">
+                        <a class="nav-link nav_btn btn btn-clr1 p-2 ps-3 pe-3" data-bs-toggle="modal"
+                            data-bs-target="#login-popup" href="#">Sign
+                            In</a>
+                    </li>
+                    <li class="nav-item m-2 fw-bold">
+                        <a class="nav-link nav_btn btn btn-clr2 p-2 ps-3 pe-3" data-bs-toggle="modal"
+                            data-bs-target="#signup-popup" href="#">Sign
+                            Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav Bar End -->
+
+    <!-- Button Section -->
+
+    <section class="overflow-hidden">
+        <div class="row bg text-white">
+            <div class="col-3 col-md-2"></div>
+            <div class="col mx-auto" style="margin-left: -60px;">
+                <div class="btn border border-1 border-white text-white head-button">Campus A-Z LISTING</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button Section End -->
+
+    <!-- Text Box Section -->
+
+    <section class="overflow-hidden">
+        <div class="row text-box-container">
+            <div class="row mx-auto w-75 m-3">
+                <div class="col-md bg-white border border-1 border-primary">
+                    <select class="form-select selectForm borderOf" aria-label="Default select example">
+                        <option selected>All</option>
+                        <option value="1">Technopark phase 1</option>
+                        <option value="2">Technopark phase 2</option>
+                        <option value="3">Technopark phase 3</option>
+                        <option value="4">Technopark phase 4</option>
+                    </select>
+                </div>
+                <div class="col-md bg-white border border-1 border-primary">
+                    <div class="d-flex">
+                        <input type="text" class="form-control selectForm borderOf" placeholder="Domain Expertise">
+                        <i class="fa-solid fa-magnifying-glass my-auto"></i>
+                    </div>
+                </div>
+                <div class="col-md bg-white border border-1 border-primary">
+                    <div class="d-flex">
+                        <input type="text" class="form-control selectForm borderOf" placeholder="Enter Company">
+                        <i class="fa-solid fa-magnifying-glass my-auto"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- A to Z -->
+            <div class="row m-3">
+                <div class="col-lg-8 col-12 mx-auto">
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#"
+                            class="text-decoration-none text-h-color text-black fw-bold but fs-5">0-9</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">A</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">B</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">C</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">D</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">E</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">F</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">G</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">H</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">I</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">J</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">K</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">L</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">M</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">N</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">O</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">P</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">Q</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">R</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">S</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">T</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">U</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">V</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">W</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">X</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">Y</a></span>
+                    <span class="m-1 letter-span"></span>
+                    <span><a href="#" class="text-decoration-none text-h-color text-black fw-bold but fs-5">Z</a></span>
+                    <span class="m-1 letter-span"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text Box Section End -->
+
+    <!-- card Section -->
+
+    <div class="container row mx-auto overflow-hidden">
+        <div class="col">
+            <div class="row data-tab-container mt-5">
+
+                <!-- A -->
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 1 data" data-tab="A">
+                    <img src="./Asset/images/adarsh.jfif" height="100px" width="150px" class="mt-5 mx-auto img-fluid" />
+                    <h5 class="mt-4 mx-auto">Anna Adarsh College for women...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-muted mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 2 data" data-tab="A">
+                    <img src="./Asset/images/anna-maria.png" height="120px" width="170px" class=" mt-5 mx-auto img-fluid" />
+                    <h5 class="mt-4 mx-auto">Anna Maria College is a private Roman...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 3 data" data-tab="A">
+                    <img src="./Asset/images/arunachala.jpg" height="150px" width="170px" class="mt-5 mx-auto img-fluid" />
+                    <h5 class="mt-4 mx-auto">Arunachala College of Engineering for Women...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <!-- B -->
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 4 data" data-tab="B">
+                    <img src="./Asset/images/hindu.png" height="180px" width="120px" class="mt-5 mx-auto img-fluid" />
+                    <h5 class="mt-4 mx-auto">South Travancore Hindu College, is a...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 5 data" data-tab="B">
+                    <img src="./Asset/images/jamal mohamed.jfif" height="100px" width="150px" class="mt-5 mx-auto img-fluid" />
+                    <h5 class="mt-4 mx-auto">Jamal Mohamed College is a Government-aided ...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 6 data" data-tab="B">
+                    <img src="./Asset/images/johns.jpg" height="140px" width="170px" class="mt-5 mx-auto" />
+                    <h5 class="mt-4 mx-auto">St.John's College, Palayamkottai Since 1878....</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 6 data" data-tab="B">
+                    <img src="./Asset/images/joshep.png" height="150px" width="180px" class="mt-5 mx-auto" />
+                    <h5 class="mt-4 mx-auto">Joseph's College of Engineering, a premier...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary my-auto">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 4 data" data-tab="B">
+                    <img src="./Asset/images/loyala.png" height="150px" width="180px" class="mt-5 mx-auto" />
+                    <h5 class="mt-4 mx-auto">Loyola College is a private Catholic higher education...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 5 data" data-tab="B">
+                    <img src="./Asset/images/mgr.jfif" height="150px" width="150px" class="mt-5 mx-auto" />
+                    <h5 class="mt-4 mx-auto">Dr. M.G.R. Engineering College was founded...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 6 data" data-tab="B">
+                    <img src="./Asset/images/muslim arts.jfif" height="150px" width="150px" class="mt-5 mx-auto" />
+                    <h5 class="mt-4 mx-auto">The Muslim Arts College, born out of the vision...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 7 data" data-tab="B">
+                    <img src="./Asset/images/narayana guru.jfif" height="150px" width="150px" class="mt-5 mx-auto" />
+                    <h5 class="mt-4 mx-auto">Narayanaguru College of Engineering (NGCE),..</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary my-auto">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 7 data" data-tab="B">
+                    <img src="./Asset/images/noorul islam.jfif" height="150px" width="180px" class="mt-5 mx-auto" />
+                    <h5 class="mt-4 mx-auto">Noorul Islam College Of Engineering Isdeemed...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary my-auto">www.srmist.edu.in</a>
+                </div>
+
+                <!-- C -->
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 8 data" data-tab="C">
+                    <img src="./Asset/images/pet.png" class="mt-5 mx-auto" height="150px" width="150px" />
+                    <h5 class="mt-4 mx-auto">PET Engineering College, Tirunelveli offers...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 9 data" data-tab="C">
+                    <img src="./Asset/images/psn.jfif" class="mt-5 mx-auto" height="150px" width="220px" />
+                    <h5 class="mt-4 mx-auto">PSN College of Engineering and Technology was...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 10 data" data-tab="C">
+                    <img src="./Asset/images/rajalakshmi.jpg" class="mt-5 mx-auto" height="150px" width="180px" />
+                    <h5 class="mt-4 mx-auto">Rajalakshmi Engineering College Chennai is...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 11 data" data-tab="C">
+                    <img src="./Asset/images/rajas.png" class="mt-5 mx-auto" height="150px" width="150px" />
+                    <h5 class="mt-4 mx-auto">RAJAS INSTITUTE OF TECHNOLOGY for...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 12 data" data-tab="C">
+                    <img src="./Asset/images/rohini.jfif" class="mt-5 mx-auto" height="150px" width="200px" />
+                    <h5 class="mt-4 mx-auto">Rohini College of Engineering and...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 12 data" data-tab="C">
+                    <img src="./Asset/images/sadakathullah.jpg" class="mt-5 mx-auto" height="150px" width="180px" />
+                    <h5 class="mt-4 mx-auto">Sadakathullah Appa College is a minority general...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <!-- D -->
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 13 data" data-tab="D">
+                    <img src="./Asset/images/scott.jpeg" class="mt-5 mx-auto" height="150px" width="200px" />
+                    <h5 class="mt-4 mx-auto">Scott Christian College is an autonomous,...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 13 data" data-tab="D">
+                    <img src="./Asset/images/sree krishna.png" class="mt-5 mx-auto" height="150px" width="200px" />
+                    <h5 class="mt-4 mx-auto">Sree Krishna College, Guruvayur visualized...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 15 data" data-tab="D">
+                    <img src="./Asset/images/srm.png" class="mt-5 mx-auto" height="150px" width="160px" />
+                    <h5 class="mt-4 mx-auto">SRM Institute of Science and Technology, formerly...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 15 data" data-tab="D">
+                    <img src="./Asset/images/vins.jfif" class="mt-5 mx-auto" height="150px" width="180px" />
+                    <h5 class="mt-4 mx-auto">Vins Christian College of Engineering Courses...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 15 data" data-tab="D">
+                    <img src="./Asset/images/wcc.jpg" class="mt-5 mx-auto" height="150px" width="220px" />
+                    <h5 class="mt-4 mx-auto">Women's Christian College is an interdenominational...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+
+                <div class="card mx-auto col-md-3 col-10 mb-5 15 data" data-tab="D">
+                    <img src="./Asset/images/xaviers.png" class="mt-5 mx-auto" height="150px" width="180px" />
+                    <h5 class="mt-4 mx-auto">St Xavier's Catholic College of Engineering Popular...</h5>
+                    <div class="mx-auto"><a href="./index1.html" class="text-decoration-none text-white">
+                            <div class="btn btn-success mt-3"><i class="fa-solid fa-eye me-2"></i>View Details</div>
+                        </a>
+                    </div>
+                    <area></area>
+                    <a href="#" class="text-center text-decoration-none text-secondary mt-3 mb-3">www.srmist.edu.in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card Section End -->
+
+    <!-- Footer -->
+
+    <footer class="container-fluid py-5 bg-dark text-white overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-2 col-sm-6 col-12">
+                    <div><img src="Asset/images/Jobaskit-logo.png" class="img-fluid responsive-img"></div>
+                    <div class="mt-4">India’s 1st Collaborative Intelligence based, smart recruitment platform. It
+                        delivers high
+                        quality recruitable pool to companies. it gives a good employee branding for job seekers to find
+                        their best fit.
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="col-2"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="col-2"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="col-2"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-2 col-sm-6 col-12 ps-md-5">
+                    <div class="h4 scroll">Pages</div><span class="border-top uLine border-2"></span>
+                    <div>
+                        <ul class="list-unstyled text">
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">About</a>
+                            </li>
+                            <li class="pb-2"><a href="#"
+                                    class="text-decoration-none text-colors fontSize1">Recruiters</a></li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">Job
+                                    Seekers</a></li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">Campus</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-2 col-sm-6 col-12 ps-md-5">
+                    <div class="h4 scroll">Resources</div><span class="border-top uLine2 border-2"></span>
+                    <div>
+                        <ul class="list-unstyled text">
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">Blog</a>
+                            </li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">TCA</a>
+                            </li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">Privacy
+                                    Policy</a></li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">Refund
+                                    Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-2 col-sm-6 col-12 ps-md-4">
+                    <div class="h4 scroll">Contact Us</div><span class="border-top uLine3 border-2"></span>
+                    <div>
+                        <ul class="list-unstyled text">
+                            <li class="pb-2"><a href="#"
+                                    class="text-decoration-none text-colors fontSize1">info@jobaskit.com</a>
+                            </li>
+                            <li class="pb-2"><a href="#" class="text-decoration-none text-colors fontSize1">+91
+                                    7339207420</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Script Sheet -->
+
+    <script src="./Asset/JS/pagination.js"></script>
+</body>
+
+</html>
